@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/post/test/5"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"success\":false,\"data\":null,\"message\":\"Введен некорректный ИНН\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

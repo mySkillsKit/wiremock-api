@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/soap/post/test/9",
+    "headers": {
+      "Accept": {
+        "contains": "text/xml"
+      },
+      "Content-Type": {
+        "contains": "text/xml"
+      },
+      "SOAPAction": {
+        "equalTo": "\"GetPosition\""
+      }
+    },
+    "bodyPatterns": [
+      {
+        "equalToXml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <S:Body>\n        <GetPosition xmlns=\"urn://hr-gov-spb-ru/services/1.0\">\n            <PositionId>1</PositionId>\n        </GetPosition>\n    </S:Body>\n</S:Envelope>"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "body": "<?xml version='1.0' encoding='UTF-8'?>\n<senv:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:senv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"urn://hr-gov-spb-ru/services/1.0\">\n    <senv:Body>\n        <tns:GetPositionResponse>\n            <tns:Position>\n                <tns:Id>5097</tns:Id>\n                <tns:Name>начальник Отдела</tns:Name>\n                <tns:FullName xsi:nil=\"true\"/>\n                <tns:ShortName xsi:nil=\"true\"/>\n                <tns:AccusativeName>начальника Отдела</tns:AccusativeName>\n                <tns:DativeName>начальнику Отдела</tns:DativeName>\n                <tns:GenitiveName>начальника Отдела</tns:GenitiveName>\n                <tns:IsCorrupt>true</tns:IsCorrupt>\n                <tns:IsChief>true</tns:IsChief>\n                <tns:DirectChief>27210</tns:DirectChief>\n                <tns:SalaryUnits>28.00</tns:SalaryUnits>\n                <tns:SalaryRubles>28.00</tns:SalaryRubles>\n                <tns:EmployeeGUID>7b7d1382-d98f-4ce7-99ba-827861411a0e</tns:EmployeeGUID>\n                <tns:Group>главная</tns:Group>\n                <tns:Category>руководители</tns:Category>\n                <tns:Department>\n                    <tns:Id>1160</tns:Id>\n                    <tns:Name>Отдел по вопросам государственной службы и кадров</tns:Name>\n                </tns:Department>\n                <tns:RenamingOrder>\n                    <tns:DateFrom>1985-11-18</tns:DateFrom>\n                </tns:RenamingOrder>\n                <tns:UpdatedAt>2021-10-18T15:30:34.497014+03:00</tns:UpdatedAt>\n            </tns:Position>\n        </tns:GetPositionResponse>\n    </senv:Body>\n</senv:Envelope>"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/post/test/4"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"success\": false,\"data\": null,\"message\": \"Системный ключ не разрешен\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

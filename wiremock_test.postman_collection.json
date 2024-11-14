@@ -1,0 +1,355 @@
+{
+	"info": {
+		"_postman_id": "8d4abacc-8323-4b28-9c20-0fa017ff3adb",
+		"name": "wiremock_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21846261"
+	},
+	"item": [
+		{
+			"name": "test_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/get/test/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"get",
+						"test",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"organization\":\"347228329919\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8012/post/test/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"post",
+						"test",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"inn\":\"7811062339\",\n    \"kpp\": \"781401001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8012/post/test/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"post",
+						"test",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"organization\":\"347228329919\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8012/post/test/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"post",
+						"test",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"organization\":\"347228329919\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8012/post/test/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"post",
+						"test",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"organization\":\"347228329919\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8012/post/test/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"post",
+						"test",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"organization\":\"347228329919\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8012/get/test/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"get",
+						"test",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_8",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"GetOrganizations\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<senv:Envelope xmlns:senv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"urn://hr-gov-spb-ru/services/1.0\">\n    <senv:Body>\n        <GetOrganizations xmlns=\"urn://hr-gov-spb-ru/services/1.0\"/>\n    </senv:Body>\n</senv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8012/soap/post/test/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"soap",
+						"post",
+						"test",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_9",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"GetPosition\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <S:Body>\n        <GetPosition xmlns=\"urn://hr-gov-spb-ru/services/1.0\">\n            <PositionId>1</PositionId>\n        </GetPosition>\n    </S:Body>\n</S:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8012/soap/post/test/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"soap",
+						"post",
+						"test",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_10",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"GetStaffing\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<senv:Envelope xmlns:senv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"urn://hr-gov-spb-ru/services/1.0\">\n    <senv:Body>\n        <GetStaffing xmlns=\"urn://hr-gov-spb-ru/services/1.0\">\n            <OrganizationId>1</OrganizationId>\n        </GetStaffing>\n    </senv:Body>\n</senv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8012/soap/post/test/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"soap",
+						"post",
+						"test",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

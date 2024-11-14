@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/post/test/6"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"success\":false,\"data\":null,\"message\":\"Отсутсвуют параметры в запросе\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

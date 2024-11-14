@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/get/test/7"
+  },
+  "response": {
+    "status": 405,
+    "body": "{ \"timestamp\": \"2023-09-22T15:43:38.406+0300\", \"status\": 405, \"error\": \"Method Not Allowed\", \"message\": \"Request method 'GET' not supported\", \"path\": \"//open/control/\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

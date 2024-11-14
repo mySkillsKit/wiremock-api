@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/get/test/1"
+  },
+  "response": {
+    "status": 200,
+    "body": "{ \"success\": true, \"data\": {   \"inn\": \"7811062339\"   }} ",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
