@@ -1,13 +1,19 @@
 {
   "request": {
     "method": "POST",
-    "url": "/api-asiabank-gateway/api/svyaznoy-mir/check-pay"
+    "url": "/api-asiabank-gateway/api/svyaznoy-mir/check-pay",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$[?(@.command == 'check')]"
+      }
+    ]
   },
   "response": {
     "status": 200,
-    "body": "{\n    \"response\": {\n        \"result\": 90,\n        \"comment\": \"Проведение платежа не окончено\",\n\t \"commission\": 0.0,\n\t \"description\":\"Пополнение карты ФИО: IN****** CA***\"\n    }\n}\n",
+    "body": "{\n    \"response\": {\n        \"result\": 0,\n        \"comment\": \"Успех – ошибок нет!\",\n        \"commission\": 0.0,\n        \"description\": \"Пополнение карты ФИО: IN****** CA***\"\n    }\n}",
     "headers": {
       "Content-Type": "application/json"
     }
   }
 }
+
