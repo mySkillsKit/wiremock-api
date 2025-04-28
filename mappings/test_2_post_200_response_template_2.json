@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/post/test/pay"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\n  \"paymentId\": \"{{jsonPath request.body '$.externalId'}}\",\n  \"status\": \"SUCCESS\",\n  \"message\": \"success\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": ["response-template"]
+  }
+}
